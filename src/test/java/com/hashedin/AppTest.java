@@ -37,12 +37,8 @@ public class AppTest
      */
     public void testApp() throws IOException
     {
-    	
     	MovieManager mg = new MovieManager();
 		Map<String, Movie> movieMap = mg.getMovies(mg.getClass().getClassLoader().getResourceAsStream("movies_test"));
-         
-    	
-    	
         assertEquals(movieMap.size(),6);
     }
     
