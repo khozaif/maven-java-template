@@ -1,13 +1,21 @@
 package com.hashedin;
 
+import java.io.IOException;
+
 /**
- * Hello world!
+ * Main Class
  *
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    
+    	public static void main(String[] args) throws IOException {
+    		MovieManager mg = new MovieManager();
+    		mg.getMovies(mg.getClass().getClassLoader().getResourceAsStream("movie.data"));
+    	//	Map<String, MovieRatings> movieRMap =mg.getClass().getClassLoader().getResourceAsStream("ratings.data"));
+    		mg.getMostActiveUser();
+    		mg.getmostRatedMovie();
+    		
+    	}
     }
-}
+

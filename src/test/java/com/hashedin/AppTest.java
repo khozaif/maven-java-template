@@ -1,7 +1,11 @@
 package com.hashedin;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.List;
 import java.util.Map;
+
+import org.apache.commons.io.IOUtils;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -40,6 +44,9 @@ public class AppTest
     	MovieManager mg = new MovieManager();
 		Map<String, Movie> movieMap = mg.getMovies(mg.getClass().getClassLoader().getResourceAsStream("movies_test"));
         assertEquals(movieMap.size(),6);
+        
+       
+        
     }
     
 }
