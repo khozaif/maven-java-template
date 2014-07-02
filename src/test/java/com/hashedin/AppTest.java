@@ -45,8 +45,8 @@ public class AppTest
 		Map<String, Movie> movieMap = mg.getMovies(mg.getClass().getClassLoader().getResourceAsStream("movies_test"));
         assertEquals(movieMap.size(),6);
         
-       
-        
+        Map<Integer,Genre> genmap=mg.getGenre(mg.getClass().getClassLoader().getResourceAsStream("genre.data"));
+        assertEquals(genmap.size(),19);     
     }
     
 }
