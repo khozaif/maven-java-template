@@ -1,12 +1,7 @@
 package com.hashedin;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.List;
 import java.util.Map;
-
-import org.apache.commons.io.IOUtils;
-
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
